@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@700&display=swap');
+
+
+.bg-intro img{
+    position: absolute;
+    z-index: -1;
+}
+
+#imgbg_1{
+    top:3%;
+    left: 1%;
+    transform: rotate(45deg);
+}
+
+#imgbg_2{
+    bottom:12%;
+    left: 4%;
+}
+
+#imgbg_3{
+    bottom:40%;
+    left: 20%;
+    transform: rotate(-90deg);
+}
+
+#imgbg_4{
+    top:2%;
+    right: 3%;
+}
+
+#imgbg_5{
+    bottom:3%;
+    right: 7%;
+    transform: rotate(90deg);
+}
+
+#imgbg_6{
+    top:40%;
+    right:18%;
+    transform: rotate(180deg);
+}
+
+#imgbg_7{
+    bottom:1%;
+    left:30%;
+    transform: rotate(30deg);
+}
+
+#imgbg_8{
+    top:15%;
+    right: 45%;
+    transform: rotate(20deg);
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+section{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #CDDCFE;
+}
+
+.primary{
+    color: #8975FF;
+}
+
+.intro h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 5.5rem;
+    margin-bottom: -5px;
+}
+
+.intro p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+img{
+    overflow: hidden;
+    height: 220px;
+    width: 170px;
+}
+
+button{
+    width: 200px;
+    background-color: #8975FF;
+    border:none;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius:25px;
+}
+
+.intro2 h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.intro2 p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.intro2-container{
+    display: flex;
+    place-items: center;
+}
+
+.intro2-container img{
+    height: 30%;
+    width: 45%;
+}
+
+.intro3-container{
+    display: flex;
+}
+
+.intro3-container img{
+    height: 50%;
+    width:30%;
+    padding-right: 5rem;
+}
+
+.intro3 h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.steps-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 10rem;
+}
+
+.steps-container h2{
+    font-size: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.steps-container p{
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.intro4 h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
+}
+
+.card{
+    width: 410px;
+    height: 400px;
+    background-color:#BCB3F2;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+.card h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.card p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+    width: 80%;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-container{
+    height: 200px;
+    width: 250px;
+}
+
+.aboutus h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+}
+
+.card-aboutus{
+    width: 255px;
+    height: 260px;
+    background-color:#BCB3F2;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+.card-aboutus img{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.about:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.about:nth-child(3){
+    transition-delay: 400ms;
+}
+
+.about:nth-child(4){
+    transition-delay: 400ms;
+}
+
+.about:nth-child(5){
+    transition-delay: 600ms;
+}
+
+.card:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.card:nth-child(3){
+    transition-delay: 400ms;  
+}
+
+.card:nth-child(4){
+    transition-delay: 600ms;
+    
+}
+
+@media(prefer-reduced-motion){
+    .hidden{
+        transform: none;
+    }
+}
